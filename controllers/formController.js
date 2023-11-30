@@ -22,7 +22,7 @@ const getForm = async (req, res) => {
 
 const updateForm=async(req,res)=>{
     const { id } = req.params;
-    console.log(req.params)
+    console.log(req.body,"lkkl")
     try {
       const result = await Form.findByIdAndUpdate(id, { ...req.body });
       return res.status(200).send({ data: result });

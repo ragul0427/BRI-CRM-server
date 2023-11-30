@@ -46,14 +46,14 @@ const addDetailsEmployeeSchema = mongoose.Schema({
   onlineAggregator: {
     type: String,
   },
-  onlineAggregatersList:{
-    type:Array,
+  onlineAggregatersList: {
+    type: Array,
   },
-  twoWheelerSlot:{
-    type:String,
+  twoWheelerSlot: {
+    type: String,
   },
-  fourWheelerSlot:{
-    type:String,
+  fourWheelerSlot: {
+    type: String,
   },
   restaurantMobileNumber: {
     type: Number,
@@ -71,14 +71,54 @@ const addDetailsEmployeeSchema = mongoose.Schema({
     type: String,
   },
   twoWheelerparking: {
-    type:String
+    type: String,
   },
   fourWheelerparking: {
-    type:String
+    type: String,
   },
   status: {
     type: String,
   },
+  city: {
+    type: String,
+  },
+  domain: {
+    type: String,
+  },
+  domainName: {
+    type: String,
+  },
+  tradeMark: {
+    type: String,
+  },
+  tradePhotos: {
+    type: Array,
+  },
+  dld: {
+    type: String,
+  },
+  entityNo: {
+    type: String,
+  },
+  dldEmail: {
+    type: String,
+  },
+  dldPassword: {
+    type: String,
+  },
+
+  address: [
+    {
+      doorNo: {
+        type: String,
+      },
+      areaName: { type: String },
+      landMark: { type: String },
+      locationCity: { type: String },
+      pinCode: { type: String },
+      state: { type: String },
+    },
+  ],
 });
 
 module.exports = mongoose.model(

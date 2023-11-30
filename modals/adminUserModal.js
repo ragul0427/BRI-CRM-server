@@ -15,6 +15,11 @@ const adminUserSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  city:{
+    type:String,
+  },
+  
+
 });
 
 module.exports = mongoose.model("adminuser", adminUserSchema);
